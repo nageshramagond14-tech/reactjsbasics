@@ -3,11 +3,11 @@ import { useState } from "react"
 function Todoinput({ addTodo }) {
   const [todo, setTodo] = useState("")
 
-  const handleChange = (e) => {
-    e.preventDefault()
-    if (todo.trim() !== "") {
-      addTodo(todo)
-      setTodo("")
+    const handleChange = () => {
+        if (todo.trim() !== "") {
+            addTodo(todo)
+            setTodo("")
+        }
     }
   }
 
